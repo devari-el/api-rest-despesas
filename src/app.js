@@ -1,11 +1,11 @@
-import { openDb } from './configDB.js';
-import { createTable, insertDespesa } from './controllers/despesas.js';
 import express from 'express';
+import { openDb } from './config/configDB.js';
+import { insertDespesa } from './controllers/despesas.js';
+import { initializeDatabase } from './controllers/initializeDB.js';
 
 const app = express();
 app.use(express.json());
-
-createTable();
+initializeDatabase();
 
 app.get('/api/despesa', async (req, res) => {
     try {
