@@ -13,8 +13,6 @@ export async function initializeDatabase() {
         await populateCategorias();
         await populateTipoPagamento();
         
-        // Exibe mensagem de sucesso no console após a inicialização do banco de dados
-        console.log('Banco de dados inicializado com sucesso.');
     } catch (error) {
         // Exibe mensagem de erro no console se algo falhar durante a inicialização
         console.error('Erro na inicialização do banco de dados:', error.message);

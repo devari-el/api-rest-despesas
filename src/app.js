@@ -5,6 +5,8 @@ import despesasRoutes from './routes/despesas.js';  // Importando rotas de despe
 import tiposPagamentosRoutes from './routes/tipos-pagamento.js';  // Importando rotas de tipos de pagamento
 import categoriasRoutes from './routes/categorias.js';  // Importando rotas de categorias
 
+const port = 3000;
+
 // Cria uma instância do aplicativo Express
 const app = express();
 
@@ -20,4 +22,13 @@ app.use(tiposPagamentosRoutes);  // Define as rotas de tipos de pagamento
 app.use(categoriasRoutes);  // Define as rotas de categorias
 
 // Inicia o servidor na porta 3000 e exibe uma mensagem no console
-app.listen(3000, () => console.log("Tudo certo com a API"));
+app.listen(port, () => console.log("Server ON\n"));
+
+console.log(`
+    \nROUTES :\n
+    Exibir Despesas Mês Vigente:   GET  http://localhost:${port}/api/despesa\n
+    Exibir TODAS as Despesas:      GET  http://localhost:${port}/api/despesa/all\n
+    Exibir Categorias:             GET  http://localhost:${port}/api/categorias\n
+    Exibir Tipos de Pagamentos:    GET  http://localhost:${port}/api/tipos-pagamento\n
+    Inserir Nova Despesa:          POST http://localhost:${port}/api/despesa
+    `);

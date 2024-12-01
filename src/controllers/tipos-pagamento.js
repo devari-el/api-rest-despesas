@@ -20,11 +20,9 @@ export async function populateTipoPagamento() {
                 ('Débito'), 
                 ('Pix')
             `);
-            console.log('Tabela TipoPagamento populada com dados iniciais.');
-        } else {
-            // Se já houver registros, informa que a tabela já contém dados
-            console.log('Tabela TipoPagamento já contém dados.');
+
         }
+
     } catch (error) {
         // Em caso de erro, exibe a mensagem de erro
         console.error('Erro ao popular a tabela TipoPagamento:', error.message);

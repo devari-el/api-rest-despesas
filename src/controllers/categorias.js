@@ -20,10 +20,6 @@ export async function populateCategorias() {
                 ('Saúde', 'Farmácia'), 
                 ('Contas', 'Luz')
             `);
-            console.log('Tabela Categorias populada com dados iniciais.');
-        } else {
-            // Se já houver registros, informa que a tabela já contém dados
-            console.log('Tabela Categorias já contém dados.');
         }
     } catch (error) {
         // Em caso de erro, exibe a mensagem de erro
