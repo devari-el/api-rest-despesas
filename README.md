@@ -51,10 +51,7 @@ npm run dev
 
 #### b. **Requisições POST**:
    1. Selecione a opção **POST**.
-   2. Vá para a aba **Headers**:
-      - No campo **Key**, digite `Content-Type`.
-      - No campo **Value**, digite `application/json`.
-   3. Vá para a aba **Body**:
+   2. Vá para a aba **Body**:
       - Selecione **application/json**.
       - Insira os dados no seguinte formato JSON:
 
@@ -68,7 +65,7 @@ npm run dev
    ```
 
    - Os atributos `tipo_pagamento_id` e `categoria_id` podem ser visualizados conforme as requisições **GET** disponíveis no terminal.
-
+   3. Insira a URL exibida no terminal e clique em **Send**.
 ---
 
 ## 🚀 Tecnologias Utilizadas
