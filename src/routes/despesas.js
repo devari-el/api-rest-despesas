@@ -14,7 +14,7 @@ router.get('/api/despesa', async (req, res) => {
         const db = await openDb();
 
         // Obter o ano e o mês atual
-        const dataAtual = new Date();
+        const dataAtual = new Date();     
         const anoAtual = dataAtual.getFullYear();
         const mesAtual = String(dataAtual.getMonth() + 1).padStart(2, '0'); // Meses começam do 0, então somamos 1
 
